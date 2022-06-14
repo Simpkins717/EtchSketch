@@ -10,3 +10,11 @@ function createGrid() {
     document.getElementById("container").appendChild(row);
   }
 }
+function buttonHover() {
+  this.style.border = "3px solid white";
+}
+
+const boxhover = document.querySelectorAll(".box");
+boxhover.forEach((boxhover) =>
+  boxhover.addEventListener("mouseover", buttonHover)
+);
